@@ -31,7 +31,9 @@
  0 <= Celsius <= 1000
  */
 function convertTemperature(celsius){
-
+const kelvin = celsius + 273.15;
+const fahrenheit = celsius * 1.8 + 32;
+return [kelvin.toFixed(2), fahrenheit.toFixed(2)];
   
 
  }
